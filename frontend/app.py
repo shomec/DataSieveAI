@@ -15,7 +15,7 @@ st.set_page_config(
 )
 
 # API Endpoint URL
-BACKEND_URL = "http://localhost:8000"
+BACKEND_URL = "http://localhost:8001"
 
 # Inject Custom CSS for Rich Aesthetics
 st.markdown("""
