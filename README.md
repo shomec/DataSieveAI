@@ -25,7 +25,7 @@ Make sure you have [Docker](https://www.docker.com/products/docker-desktop/) and
 
 1. **Navigate to the Project Directory:**
    ```bash
-   cd /Users/shomec/Documents/antigravity-workspace/DataSieveAI
+   cd /DataSieveAI
    ```
 
 2. **Build and Run the Container:**
