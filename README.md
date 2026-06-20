@@ -14,7 +14,7 @@ The system operates as an unsupervised gateway that uses sentence embeddings, K-
 
 ## 🛠️ Step-by-Step Run & Launch Guide
 
-This application runs locally in a **single Docker container** containing both a **FastAPI backend** (port `8000`) and a **Streamlit frontend** (port `8501`). All embedding and clustering steps run fully locally on CPU inside the container.
+This application runs locally in a **single Docker container** containing both a **FastAPI backend** (port `8001`) and a **Streamlit frontend** (port `8502`). All embedding and clustering steps run fully locally on CPU inside the container.
 
 ### 📋 Prerequisites
 Make sure you have [Docker](https://www.docker.com/products/docker-desktop/) and [Docker Compose](https://docs.docker.com/compose/) installed on your machine.
@@ -35,8 +35,8 @@ Make sure you have [Docker](https://www.docker.com/products/docker-desktop/) and
    *Note: During the build stage, the container pre-downloads and caches the Hugging Face `all-MiniLM-L6-v2` transformer model (~90MB). This ensures that once the container starts, it operates completely offline and launches instantly.*
 
 3. **Access the Applications:**
-   *   **Streamlit Frontend (UI):** Open your browser to [http://localhost:8501](http://localhost:8501)
-   *   **FastAPI Backend (API docs):** Open your browser to [http://localhost:8000/docs](http://localhost:8000/docs)
+   *   **Streamlit Frontend (UI):** Open your browser to [http://localhost:8502](http://localhost:8502)
+   *   **FastAPI Backend (API docs):** Open your browser to [http://localhost:8001/docs](http://localhost:8001/docs)
 
 4. **Shutdown the Container:**
    To stop the services, press `Ctrl + C` or run:
@@ -57,14 +57,14 @@ If you prefer using the Docker CLI directly:
 
 2. **Run the Container:**
    ```bash
-   docker run -p 8501:8501 -p 8000:8000 datasieve-ai
+   docker run -p 8502:8502 -p 8001:8001 datasieve-ai
    ```
 
 ---
 
 ## ⚙️ Configuration & Usage in the Dashboard
 
-Once the Streamlit interface is loaded at `http://localhost:8501`:
+Once the Streamlit interface is loaded at `http://localhost:8502`:
 
 ### Step 1: Ingest Data
 Choose one of the two ingestion methods in the left sidebar:
@@ -105,15 +105,13 @@ where $C$ is the number of clusters, extracting the top 5 most representative te
 ### 5. Guardrail Threat Scanning
 A regex scanner scans the isolated outliers and clusters for specific indicators (e.g. SQL Injection patterns, `<script>` tags, or database traceback logs) and prints severity warnings in the UI dashboard, enabling rapid system pivots or firewall rule updates.
 
-## Dashboard Sample View
+## Dashboard Demo
+
+Live interactive demo here: https://datasieveai-118680568866.us-west1.run.app
+
+## Dashboard Sample View:
 
 <img width="1997" height="938" alt="Screenshot 2026-06-19 at 8 54 44 PM" src="https://github.com/user-attachments/assets/9a93bd88-6142-4261-a937-7343dbb3bb7c" />
-
-<img width="1998" height="920" alt="Screenshot 2026-06-19 at 8 56 31 PM" src="https://github.com/user-attachments/assets/f5e8dfb8-c1a2-4938-9649-9a206eee54d3" />
-
-<img width="1981" height="948" alt="Screenshot 2026-06-19 at 8 57 04 PM" src="https://github.com/user-attachments/assets/4b385a54-fa12-43ef-87b5-e581d7c8072d" />
-
-<img width="1982" height="963" alt="Screenshot 2026-06-19 at 8 57 21 PM" src="https://github.com/user-attachments/assets/3be51c44-962c-484d-bd68-81fb6be56519" />
 
 
 
