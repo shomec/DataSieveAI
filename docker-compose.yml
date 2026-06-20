@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  datasieve-ai:
+    build: .
+    container_name: datasieve-ai
+    ports:
+      - "8501:8501"
+      - "8000:8000"
+    volumes:
+      - ./data_exports:/app/data_exports
+    restart: unless-stopped
