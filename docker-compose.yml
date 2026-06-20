@@ -5,8 +5,8 @@ services:
     build: .
     container_name: datasieve-ai
     ports:
-      - "8501:8501"
-      - "8000:8000"
+      - "8502:8502"
+      - "8001:8001"
     volumes:
       - ./data_exports:/app/data_exports
     restart: unless-stopped
