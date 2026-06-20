@@ -145,7 +145,7 @@ try:
     else:
         st.sidebar.warning("Backend: Embedding Model Loading...")
 except Exception:
-    st.sidebar.error("Backend: Offline (Start the FastAPI server on port 8000)")
+    st.sidebar.error("Backend: Offline (Start the FastAPI server on port 8001)")
 
 # Data Ingestion Options
 st.sidebar.subheader("Dataset Ingestion")
