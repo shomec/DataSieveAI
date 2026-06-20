@@ -104,3 +104,16 @@ where $C$ is the number of clusters, extracting the top 5 most representative te
 
 ### 5. Guardrail Threat Scanning
 A regex scanner scans the isolated outliers and clusters for specific indicators (e.g. SQL Injection patterns, `<script>` tags, or database traceback logs) and prints severity warnings in the UI dashboard, enabling rapid system pivots or firewall rule updates.
+
+## Dashboard Sample View
+
+<img width="1997" height="938" alt="Screenshot 2026-06-19 at 8 54 44 PM" src="https://github.com/user-attachments/assets/9a93bd88-6142-4261-a937-7343dbb3bb7c" />
+
+<img width="1998" height="920" alt="Screenshot 2026-06-19 at 8 56 31 PM" src="https://github.com/user-attachments/assets/f5e8dfb8-c1a2-4938-9649-9a206eee54d3" />
+
+<img width="1981" height="948" alt="Screenshot 2026-06-19 at 8 57 04 PM" src="https://github.com/user-attachments/assets/4b385a54-fa12-43ef-87b5-e581d7c8072d" />
+
+<img width="1982" height="963" alt="Screenshot 2026-06-19 at 8 57 21 PM" src="https://github.com/user-attachments/assets/3be51c44-962c-484d-bd68-81fb6be56519" />
+
+
+
