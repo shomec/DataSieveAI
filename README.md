@@ -107,7 +107,7 @@ A regex scanner scans the isolated outliers and clusters for specific indicators
 
 ## Dashboard Demo
 
-Live interactive demo here: https://datasieveai-118680568866.us-west1.run.app
+Live interactive demo here: https://tinyurl.com/36sa8vub
 
 ## Dashboard Sample View:
 
