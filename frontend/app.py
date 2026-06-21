@@ -23,7 +23,6 @@ st.markdown("""
     /* Gradient Header */
     .main-header {
         background: linear-gradient(135deg, #6C3082, #1C0A35);
-        color: white;
         padding: 2rem 2.5rem;
         border-radius: 12px;
         margin-bottom: 2rem;
@@ -35,12 +34,14 @@ st.markdown("""
         font-weight: 800;
         font-size: 2.8rem;
         letter-spacing: -0.5px;
+        color: white;
     }
     .main-header p {
         margin: 10px 0 0 0;
         font-size: 1.15rem;
         opacity: 0.9;
         font-weight: 300;
+        color: white;
     }
     
     /* Metrics Box */
